@@ -156,7 +156,7 @@ function renderExpenses() {
 
     const detailsDiv = document.createElement('div');
     detailsDiv.classList.add('details');
-    detailsDiv.innerHTML = `<strong>${exp.description}</strong> - $${exp.amount.toFixed(2)} <small>${exp.date} (${exp.category})</small>`;
+    detailsDiv.innerHTML = `<strong>₹{exp.description}</strong> - ₹${exp.amount.toFixed(2)} <small>${exp.date} (${exp.category})</small>`;
 
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
@@ -224,7 +224,7 @@ function renderIncomes() {
 
     const detailsDiv = document.createElement('div');
     detailsDiv.classList.add('details');
-    detailsDiv.innerHTML = `<strong>${inc.description}</strong> - $${inc.amount.toFixed(2)} <small>${inc.date} (${inc.category})</small>`;
+    detailsDiv.innerHTML = `<strong>${inc.description}</strong> - ₹${inc.amount.toFixed(2)} <small>${inc.date} (${inc.category})</small>`;
 
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
